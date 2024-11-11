@@ -1,5 +1,5 @@
 import React from 'react'
-import { testimonialsData } from '../constans'
+import { testimonialsData } from '../constants'
 import TestimoniaslCard from '../components/TestimoniaslCard'
 
 

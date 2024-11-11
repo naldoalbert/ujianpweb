@@ -1,6 +1,6 @@
 import React from 'react'
 import FeaturedCard from '../components/FeaturedCard'
-import { featuresData } from '../constans'
+import { featuresData } from '../constants'
 
 const Features = () => {
     return (

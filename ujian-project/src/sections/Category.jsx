@@ -1,5 +1,5 @@
 import React from 'react'
-import { CategoryData } from '../constans'
+import { CategoryData } from '../constants'
 import CategoryCard from '../components/CategoryCard'
 
 const Category = () => {
