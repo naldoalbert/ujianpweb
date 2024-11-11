@@ -40,7 +40,7 @@ const ShopCard = ({ imgURL, title, price }) => {
     const navigate = useNavigate();
 
     const handleBuyNow = () => {
-        navigate('/buy', { state: { imgURL, title, price } }); // Mengirimkan data barang ke BuyPage
+        navigate('/buy', { state: { imgURL, title, price, id } }); // Tambahkan id produk
     };
 
     return (
