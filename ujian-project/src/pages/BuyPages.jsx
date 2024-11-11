@@ -1,12 +1,13 @@
-import React from 'react'
+import React from 'react';
 
 const BuyPages = () => {
     return (
-        <div className="p-8">
-            <h1 className="text-2xl font-bold">Welcome to the New Page!</h1>
-            <p>This is the content of the new page.</p>
+        <div>
+            <h1>Purchase Page</h1>
+            <p>Here you can complete your purchase.</p>
+            {/* Add more content related to the purchase process */}
         </div>
-    )
-}
+    );
+};
 
-export default BuyPages
+export default BuyPages;

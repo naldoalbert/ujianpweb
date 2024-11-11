@@ -27,7 +27,7 @@ export default function App() {
               <BuyNowButton />
             </div>
           } />
-          <Route path="/buy" element={<BuyPages />} />
+          <Route path="/buy" element={<BuyPages />} /> {/* This route will render the BuyPages component */}
         </Routes>
       </div>
     </Router>
