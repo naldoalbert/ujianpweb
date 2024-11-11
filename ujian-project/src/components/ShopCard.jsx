@@ -33,7 +33,7 @@ const ShopCard = ({ imgURL, title, price }) => {
     const navigate = useNavigate(); // Initialize useNavigate
 
     const handleBuyNow = () => {
-        navigate('/buyer-data'); // Navigate to the buyer data page
+        navigate('/buy'); // Navigate to the buyer data page
     };
 
     return (
@@ -49,8 +49,8 @@ const ShopCard = ({ imgURL, title, price }) => {
                 <RiStarLine />
             </div>
             <div className="flex gap-2 mt-4">
-                <button onClick={handleBuyNow} className="bg-blue-500 text-white py-2 px-4 rounded">Buy Now</button>
-                <button className="bg-gray-300 text-black py-2 px-4 rounded">Add to Cart</button>
+                <button onClick={handleBuyNow} className="text-[.7rem] uppercase border-solid border-[#777] text-black p-2 hover:bg-black hover:border-black hover:text-white mr-1">Buy Now</button>
+                <button className="text-[.7rem] uppercase border-solid border-[#777] text-black p-2 hover:bg-black hover:border-black hover:text-white">Add to Cart</button>
             </div>
         </div>
     );
