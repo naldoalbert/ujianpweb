@@ -1,5 +1,5 @@
 import React from 'react'
-import { ShopData } from '../constants'
+import { ShopData } from '../constans'
 import ShopCard from '../components/ShopCard'
 
 const Shop = () => {
