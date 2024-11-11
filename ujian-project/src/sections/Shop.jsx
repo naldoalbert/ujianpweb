@@ -32,3 +32,43 @@ const Shop = () => {
 }
 
 export default Shop
+
+
+// import React, { useState } from 'react';
+// import { ShopData } from '../constans';
+// import ShopCard from '../components/ShopCard';
+
+// const Shop = () => {
+//     const [cart, setCart] = useState([]);
+
+//     const addToCart = (item) => {
+//         const existingItem = cart.find(cartItem => cartItem.title === item.title);
+//         if (existingItem) {
+//             existingItem.quantity += item.quantity; // Tambahkan jumlah jika barang sudah ada
+//             setCart([...cart]);
+//         } else {
+//             setCart([...cart, item]); // Tambahkan barang baru
+//         }
+//     };
+
+//     return (
+//         <section id="shop">
+//             <div className="title">
+//                 <h2 className="text-[1.7rem] md:[2.2rem]">Our Products</h2>
+//                 <p className="mt-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa dicta sint in ipsa aspernatur hic minima</p>
+//             </div>
+//             <div className="container max-sm:mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-12">
+//                 {
+//                     ShopData.map((shop) => (
+//                         <ShopCard key={shop.title} {...shop} addToCart={addToCart} />
+//                     ))
+//                 }
+//             </div>
+//             <div className="flex items-center justify-center mt-16">
+//                 <button onClick={() => navigate('/buy', { state: { cart } })} className="bg-blue-500 text-white py-2 px-4 rounded">Proceed to Buy</button>
+//             </div>
+//         </section>
+//     );
+// };
+
+// export default Shop;
