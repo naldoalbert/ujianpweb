@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  resize: none;
+}
+html {
+  scroll-behavior: smooth;
+  /* height: 8000px; */
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+}
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+section {
+  padding: 4rem 0 rem;
+}
+a,
+span,
+p {
+  color: var(--color-text);
+  font-size: 0.9rem;
+}
+.title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.title h2 {
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+.title h2::before {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  right: 105%;
+  background: #717fe0;
+  height: .2rem;
+  width: 2rem;
+}
+.title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 40%;
+  left: 105%;
+  background: #717fe0;
+  height: .2rem;
+  width: 2rem;
+}
+
+
+/* ======HERO====== */
+#hero{
+  background: url(../src/assets/images/bg.png);
+  background-size: cover;
+  background-position: center;
+}
+#hero .home-1{
+  animation: h-1 .4s linear backwards .5s;
+}
+#hero .home-2{
+  animation: h-2 .4s linear backwards .9s;
+}
+#hero .home-3{
+  animation: h-3 .4s linear backwards 1.3s;
+}
+#hero .home-4{
+  animation: h-4 .4s linear backwards 1.7s;
+}
+
+@keyframes h-1{
+  0%{
+    transform: translateX(-255px);
+    opacity: 0;
+  }
+}
+@keyframes h-2{
+  0%{
+    transform: translateX(255px);
+    opacity: 0;
+  }
+}
+@keyframes h-3{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+@keyframes h-4{
+  0%{
+    opacity: 0;
+  }
+}
+
+
+/* ======FEATURES====== */
+#features, #category, #shop, #testimonials{
+  padding: 4rem 0;
+}
+
+/* ======CATEGORY====== */
+.category-btn {
+  border-bottom: 2px solid black;
+  bottom: -4rem;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.6s ease;
+}
+.category-card:hover .category-btn {
+  bottom: 1.5rem;
+  opacity: 1;
+  transform: scale(1);
+}
+.category-card::before{
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  background-color: #0094e972;
+  background-image: linear-gradient(160deg, #0094e991 0%, #80d0c785 100% );
+  z-index: 1;
+}
+.category-card:hover::before{
+  width: 100%;
+}
+.category-card:hover h4,
+.category-card:hover p,
+.category-card:hover button{
+  color: white;
+  border-color: white;
+}
